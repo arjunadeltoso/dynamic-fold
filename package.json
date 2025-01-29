@@ -1,0 +1,37 @@
+{
+  "name": "dynamic-fold-extension",
+  "displayName": "Dynamic Fold",
+  "description": "Toggle folding dynamically based on the cursor's indentation level.",
+  "version": "0.0.3",
+  "repository": "https://github.com/arjunadeltoso/dynamic-fold",
+  "homepage": "https://github.com/arjunadeltoso/dynamic-fold",
+  "license": "GPL-3.0",
+  "author": "Arjuna Del Toso (https://www.linkedin.com/in/arjunadeltoso/)",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.toggleDynamicFold"
+  ],
+  "main": "./dynamic-fold.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.toggleDynamicFold",
+        "title": "Toggle Dynamic Fold"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "vscode": "^1.1.37"
+  }
+}
